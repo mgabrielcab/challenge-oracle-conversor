@@ -10,24 +10,25 @@ public class ConvertidorMoneda {
 
     //Constructor
     private static Monedas crearMoneda(String nombreMonedaOrigen, double valor) {
-        switch (nombreMonedaOrigen.toLowerCase()) {
-            case "dolar":
-            case "dólar":
+        return switch (nombreMonedaOrigen.toLowerCase()) {
+            case "dolar", "dólar" -> {
                 System.out.println("Creando Moneda Dolar");
-                return new Dolar(valor);
-            case "euro":
+                yield new Dolar(valor);
+            }
+            case "euro" -> {
                 System.out.println("Creando Moneda Euro");
-                return new Euro(valor);
-
-            case "libras":
+                yield new Euro(valor);
+            }
+            case "libras" -> {
                 System.out.println("Creando Moneda Libra");
-                return new Libras(valor);
-            case "pesos":
+                yield new Libras(valor);
+            }
+            case "pesos" -> {
                 System.out.println("Creando Moneda Peso");
-                return new Peso(valor);
-            default:
-                throw new IllegalArgumentException("Moneda no soportada");
-        }
+                yield new Peso(valor);
+            }
+            default -> throw new IllegalArgumentException("Moneda no soportada");
+        };
     }
 
     public String conversion(String nombreOrigen, String nombreDestino, double valor) {
@@ -37,7 +38,7 @@ public class ConvertidorMoneda {
                 System.out.println("Convirtiendo a Pesos " + Double.toString(monedaOrigen.convertirAPesos()));
                 return Double.toString(monedaOrigen.convertirAPesos());
             }
-            case "dolar" -> {
+            case "dolar","dólar" -> {
                 return Double.toString(monedaOrigen.convertirADolar());
             }
             case "libras" -> {
