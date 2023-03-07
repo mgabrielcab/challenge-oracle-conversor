@@ -1,5 +1,8 @@
-# challenge-oracle-conversor
+# challenge-oracle-conversor 
 # Conversor realizado con Java
+   <p align="left">
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   </p>
 Tipo de Conversores:  
 Conversor de Monedas (Pesos, Euros, Libra y Dólar)  
 Conversor de Temperatura (En desarrollo)
@@ -13,4 +16,3 @@ Conversor de Temperatura (En desarrollo)
 ![3](https://user-images.githubusercontent.com/87452372/223576694-571f8a8a-6e5f-4f67-a8c1-754140febed3.png)  
 **Converison realizada**  
 ![4](https://user-images.githubusercontent.com/87452372/223576753-227d240e-4a38-4bc6-9e1d-cb855334979a.png)  
-
