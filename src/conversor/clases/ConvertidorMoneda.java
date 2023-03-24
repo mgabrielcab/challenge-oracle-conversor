@@ -12,7 +12,7 @@ public class ConvertidorMoneda {
     private static Monedas crearMoneda(String nombreMonedaOrigen, double valor) {
         return switch (nombreMonedaOrigen.toLowerCase()) {
             case "dolar", "dólar" -> {
-                System.out.println("Creando Moneda Dolar");
+                System.out.println("Creando Moneda Doolar");
                 yield new Dolar(valor);
             }
             case "euro" -> {
