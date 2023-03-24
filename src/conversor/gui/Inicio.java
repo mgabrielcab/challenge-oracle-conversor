@@ -4,7 +4,6 @@
  */
 package conversor.gui;
 
-import conversor.clases.ConvertidorMoneda;
 import conversor.clases.ConvertidorTemperatura;
 
 /**
@@ -13,9 +12,7 @@ import conversor.clases.ConvertidorTemperatura;
  */
 public class Inicio extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Inicio
-     */
+
     public Inicio() {
         initComponents();
     }
@@ -27,7 +24,6 @@ public class Inicio extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         icono = new javax.swing.JLabel();
         boton = new javax.swing.JButton();
-        convMoneda = new ConvertidorMoneda();
         convTemperatura = new ConvertidorTemperatura();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -137,6 +133,5 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox<String> lista;
-    private ConvertidorMoneda convMoneda;
     private ConvertidorTemperatura convTemperatura;
 }
